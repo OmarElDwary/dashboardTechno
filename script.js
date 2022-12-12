@@ -1,7 +1,14 @@
 const sideMenu = document.querySelector("aside");
 const menuBtn = document.querySelector("#menu-btn");
 const closeBtn = document.querySelector("#close-btn");
-const modeToggler = document.querySelector(".theme-toggler")
+const modeToggler = document.querySelector(".theme-toggler");
+
+menuBtn.addEventListener('click', () => {
+    sideMenu.style.display = 'block';
+})
+closeBtn.addEventListener('click', () => {
+    sideMenu.style.display = 'none';
+})
 
 modeToggler.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode-variable');
